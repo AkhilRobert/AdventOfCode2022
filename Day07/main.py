@@ -1,8 +1,8 @@
 import re
-from sys import stdin
 from typing import List, Self, Tuple
 
-commands = list(map(lambda x: x.strip(), stdin.readlines()))
+with open("./input.txt") as f:
+    commands = f.read().splitlines()
 
 
 class File:
